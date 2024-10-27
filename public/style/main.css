@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    background-color: rgba(252, 252, 252, 0.634);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+h2{
+    font-size: 1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #10555A;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+      
+}
+.header-logo, .header-search{
+    padding:5px;
+    border-radius: 5px;
+}
+
+.container{
+    padding: 0 1rem;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 20px;
+}

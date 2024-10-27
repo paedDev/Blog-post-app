@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.Js news</title>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">Node.Js News</div>
+        <div class="header-search">Search</div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <% articles.forEach((article) => {  %>
+            <a href="#" class="news-card">
+                <h2><%=article.title.rendered  %> </h2>
+                <% }) %>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dicta totam quo quidem beatae veritatis officia sapiente explicabo minus mollitia aut, repudiandae, autem eveniet veniam animi ducimus minima! Corporis, explicabo.</p>
+
+            </a>
+        </div>
+    </div>
+</body>
+</html>
