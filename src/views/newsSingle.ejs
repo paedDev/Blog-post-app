@@ -9,13 +9,7 @@
 <body>
     <header class="header">
         <div class="header-logo">Node.Js News</div>
-        <div class="header-search">
-
-            <form action="/" method="POST">
-                <input type="text" name="search" placeholder="Search for news" required id="input">
-                <input type="submit" value="search">
-            </form>
-        </div>
+        <%- include("./partials/search.ejs")%>
 
     </header>
     <div class="container">
@@ -24,7 +18,9 @@
             <% if (article) {%>
             
             <h2><%-article.title.rendered  %> </h2>
-            <p><%- article.excerpt.rendered %></p>
+            <p><%- article.content.rendered %></p>
+        
+
             <% }else{ %>
                 Article not found.
                 <% } %>
