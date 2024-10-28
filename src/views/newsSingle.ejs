@@ -19,19 +19,15 @@
 
     </header>
     <div class="container">
-        <div class="content">
-            <% if (articles != null) {%>
-            <% articles.forEach((article) => {  %>
-            <a href="/article/<%-article.id %>" class="news-card">
-                <img src="<%-article.thumbnail_url %>" alt="image">
-                <h2><%-article.title.rendered  %> </h2>
-                <p><%- article.excerpt.rendered %></p>
-                <% }) %>
-
-            <% } else {%>
-                no posts found
-            <%}    %>
-
+        <div class="news-single">
+            <a href="/">&lAarr;- Back</a>
+            <% if (article) {%>
+            
+            <h2><%-article.title.rendered  %> </h2>
+            <p><%- article.excerpt.rendered %></p>
+            <% }else{ %>
+                Article not found.
+                <% } %>
             </a>
         </div>
     </div>
